@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>POKéSKOM</title>
+</head>
+
+<body>
+
+    <!-- theme selector -->
+
+    <header class="label-box-color">
+        <div class="theme-box"><img src="./ressources/img/pika.png" alt="pikachu theme" class="theme-icon"></div>
+        <div class="theme-box"><img src="./ressources/img/charmander.png" alt="charmender theme" class="theme-icon"></div>
+        <div class="theme-box"><img src="./ressources/img/squirtle.png" alt="squirtle theme" class="theme-icon"></div>
+    </header>
+
+    <!-- app countainer -->
+
+    <div id="app-countainer" class="grid-countainer-layout">
+
+        <!-- app title -->
+
+        <div id="title-box" class="grid-title-layout">
+            <h1 class="title-text"><span id="pkword">POKéSKOM</span> - Gotta catch'em all</h1>
+            <div class="flip-logo">
+                <div class="logo-inner">
+                    <div class="logo-front">
+                        <img class="title-logo" src="./ressources/img/logo.png" alt="logo">
+                    </div>
+                    <div class="logo-back">
+                        <img src="./ressources/img/refresh.png" alt="refresh">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- current loadshedding status -->
+
+        <div class="grid-now-layout app-box">
+            <div class="label-box, label-box-color">
+                <h2>Current status</h2>
+            </div>
+                <img src="./ressources/img/squirtleDown.gif" class="illustration" alt="">
+            <div class="current-data">
+                <p>🚫 Power is down : <span class="data-time">16:00 to 18:30</span></p>
+            </div>
+        </div>
+
+        <!-- next loadshedding time -->
+
+        <div class="grid-next-layout app-box">
+            <div class="label-box label-box-color">
+                <h2>Next down time</h2>
+            </div>
+        </div>
+
+        <!-- forecast table for 7 days -->
+
+        <div class="grid-forecast-layout app-box" >
+            <div class="label-box label-box-color">
+                <h2>7 days forecast</h2>
+            </div>
+            
+        </div>
+    </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

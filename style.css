@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FFCCCC;
+}
+
+/* font imports */
+
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('./ressources/fonts/pokemon-hollow-cufonfonts-webfont/Pokemon\ Solid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+ 
+ @font-face {
+    font-family: 'Pokemon Hollow';
+    src: url('./ressources/fonts/pokemon-hollow-cufonfonts-webfont/Pokemon\ Hollow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Solitero';
+    src: url('./ressources/fonts/Solitreo/Solitreo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* app grid layout */
+
+.grid-countainer-layout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr repeat(2, 2fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px; 
+}
+
+.grid-title-layout {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.grid-now-layout {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.grid-next-layout {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.grid-forecast-layout {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+/* app styles */
+
+#app-countainer {
+    max-width: 700px;
+    margin: auto;
+}
+  
+header {
+    width: auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.label-box-color {
+    background-color: #F20000;
+}
+
+.theme-box {
+    width: 80px;
+}
+
+.theme-icon {
+    height: 70px;
+    cursor: pointer;
+}
+
+#title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title-text {
+    font-family: "Solitero";
+    color: darkblue;
+}
+
+#pkword {
+    font-family: 'Pokemon Solid';
+    -webkit-text-stroke: 2px rgb(50, 50, 220);
+    -webkit-text-fill-color: gold;
+    letter-spacing: 4px;
+}
+
+.title-logo {
+    width: 100px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+.app-box {
+    background-color: #FFE6E6;
+}
+
+/* Animations */
+
+
+/* flip logo to refresh animation */
+
+
+
+.flip-logo {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.logo-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-logo:hover, .logo-inner{
+    transform: rotateY(180deg);
+}
+
+
+
+
+.logo-back {
+    transform: rotateY(180deg);
+}
+
+.theme-icon:hover {
+    height: 100px;
+}
+
+.illustration {
+    height: 200px;
+}
