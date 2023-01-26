@@ -1,12 +1,15 @@
-.headers-theme {
-    background-color: #FFD700;
-}
-
 body {
     background-color: hsl(60, 50%, 90%);
+}
+
+.headers-theme {
+    background-color: #FFD700;
 }
 
 .windows-theme {
     background-color:hsl(60, 70%, 63%)
 }
 
+.headers-titles{
+    color:navy;
+}

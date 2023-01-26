@@ -1,11 +1,15 @@
-.headers-theme {
-    background-color:crimson;
-}
-
 body {
     background-color: #e7a6b3;
 }
 
+.headers-theme {
+    background-color:crimson;
+}
+
 .windows-theme {
     background-color: #da5b75;
+}
+
+.headers-titles{
+    color: aliceblue;
 }

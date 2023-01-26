@@ -26,8 +26,8 @@
         <!-- app title & refresh logo -->
 
         <div id="title-box" class="grid-title-layout">
-            <h1 class="title-text"><span id="pkword">POKéSKOM</span> - Gotta catch'em all</h1>
-            <div class="flip">
+            <h1 class="title-text"><span id="pkword">POKéSKOM</span> - Gotta stage them all</h1>
+            <div class="flip" onclick="window.location.reload()">
                 <div class="flip-inner">
                     <div class="front">
                         <img class="thumbnail" src="./ressources/img/refresh.png" alt="refresh">
@@ -42,28 +42,30 @@
         <!-- current loadshedding status -->
 
         <div class="grid-now-layout windows-theme">
-            <div class="label-box headers-theme">
-                <h2>Current status</h2>
+            <div class="headers-box headers-theme">
+                <h2 class="headers-titles">Current status</h2>
             </div>
+            <div id="gif-box">
                 <img src="./ressources/img/squirtleDown.gif" class="illustration" alt="">
-            <div class="current-data">
-                <p>🚫 Power is down : <span class="data-time">16:00 to 18:30</span></p>
+            </div>
+            <div class="current-data-box">
+                <p><span>🚫</span> Power is <span>OFF</span> : <span class="data-time">16:00 to 18:30</span></p>
             </div>
         </div>
 
         <!-- next loadshedding time -->
 
         <div class="grid-next-layout windows-theme">
-            <div class="label-box headers-theme">
-                <h2>Next down time</h2>
+            <div class="headers-box headers-theme">
+                <h2 class="headers-titles">Next down time</h2>
             </div>
         </div>
 
         <!-- forecast table for 7 days -->
 
         <div class="grid-forecast-layout windows-theme" >
-            <div class="label-box headers-theme">
-                <h2>7 days forecast</h2>
+            <div class="headers-box headers-theme">
+                <h2 class="headers-titles">7 days forecast</h2>
             </div>
             
         </div>
