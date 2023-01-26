@@ -109,49 +109,78 @@ header {
     margin: 5px;
 }
 
-
 .app-box {
     background-color: #FFE6E6;
 }
 
-/* Animations */
 
+/* flip logo to refresh on hover */
 
-/* flip logo to refresh animation */
-
-
-.flip-logo {
-    background-color: transparent;
+.flip {
     width: 100px;
     height: 100px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
+}
+.flip:hover .flip-inner {
+        transform: rotateY(180deg);
 }
 
-.logo-inner{
-    position: relative;
+.flip .flip-inner {
+    transform-style: preserve-3d;
+    transition: transform .8s ease;
+    height: 100%;
+    width: 100%;
+}
+.flip .flip-inner .front, .flip .flip-inner .back {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
-.flip-logo:hover, .logo-inner{
-    transform: rotateY(180deg);
+.flip .flip-inner .front {
+    transform: rotateZ(1px);
 }
 
-
-
-
-.logo-back {
-    transform: rotateY(180deg);
+.flip .flip-inner .front {
+    transform: rotateY(180deg)
 }
+
+.flip .flip-inner .thumbnail {
+    width: 100%;
+}
+
+/* theme logo genius effect */
 
 .theme-icon:hover {
-    height: 100px;
+    height: 80px;
 }
 
-.illustration {
-    height: 200px;
+/* app themes */
+
+.body-squirt {
+    background-color: lightblue;
+}
+
+.body-charm {
+    background-color: lightpink;
+}
+
+.body-pika {
+    background-color: lightyellow;
+}
+
+.label-squirt {
+    background-color: royalblue;
+}
+
+.label-charm {
+    background-color: #F20000;
+}
+
+.label-pika {
+    background-color: goldenrod;
 }

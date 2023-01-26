@@ -13,26 +13,26 @@
     <!-- theme selector -->
 
     <header class="label-box-color">
-        <div class="theme-box"><img src="./ressources/img/pika.png" alt="pikachu theme" class="theme-icon"></div>
-        <div class="theme-box"><img src="./ressources/img/charmander.png" alt="charmender theme" class="theme-icon"></div>
-        <div class="theme-box"><img src="./ressources/img/squirtle.png" alt="squirtle theme" class="theme-icon"></div>
+        <div id="pika-theme" class="theme-box"><img src="./ressources/img/pika.png" alt="pikachu theme" class="theme-icon"></div>
+        <div id="charma-theme" class="theme-box"><img src="./ressources/img/charmander.png" alt="charmender theme" class="theme-icon"></div>
+        <div id="squir-theme" class="theme-box"><img src="./ressources/img/squirtle.png" alt="squirtle theme" class="theme-icon"></div>
     </header>
 
     <!-- app countainer -->
 
     <div id="app-countainer" class="grid-countainer-layout">
 
-        <!-- app title -->
+        <!-- app title & refresh logo -->
 
         <div id="title-box" class="grid-title-layout">
             <h1 class="title-text"><span id="pkword">POKéSKOM</span> - Gotta catch'em all</h1>
-            <div class="flip-logo">
-                <div class="logo-inner">
-                    <div class="logo-front">
-                        <img class="title-logo" src="./ressources/img/logo.png" alt="logo">
+            <div class="flip">
+                <div class="flip-inner">
+                    <div class="front">
+                        <img class="thumbnail" src="./ressources/img/refresh.png" alt="refresh">
                     </div>
-                    <div class="logo-back">
-                        <img src="./ressources/img/refresh.png" alt="refresh">
+                    <div class="back">
+                        <img class="thumbnail" src="./ressources/img/logo.png" alt="logo">
                     </div>
                 </div>
             </div>
@@ -69,6 +69,7 @@
     </div>
     </section>
     
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/theme.js"></script>
 </body>
 </html>
