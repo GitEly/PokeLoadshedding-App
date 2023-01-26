@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/themePikachu.css" id="theme-sheet">
     <title>POKéSKOM</title>
 </head>
 
@@ -12,10 +13,10 @@
 
     <!-- theme selector -->
 
-    <header class="label-box-color">
-        <div id="pika-theme" class="theme-box"><img src="./ressources/img/pika.png" alt="pikachu theme" class="theme-icon"></div>
-        <div id="charma-theme" class="theme-box"><img src="./ressources/img/charmander.png" alt="charmender theme" class="theme-icon"></div>
-        <div id="squir-theme" class="theme-box"><img src="./ressources/img/squirtle.png" alt="squirtle theme" class="theme-icon"></div>
+    <header class="headers-theme">
+        <div id="pika-theme-button" class="theme-box"onclick="setTheme('Pikachu')"><img src="./ressources/img/pika.png" class="theme-icon" alt="pikachu theme"></div>
+        <div id="charma-theme-button" class="theme-box" onclick="setTheme('Charmander')"><img src="./ressources/img/charmander.png" class="theme-icon" alt="charmender theme"></div>
+        <div id="squir-theme-button" class="theme-box"onclick="setTheme('Squirtle')"><img src="./ressources/img/squirtle.png" class="theme-icon" alt="squirtle theme"></div>
     </header>
 
     <!-- app countainer -->
@@ -40,8 +41,8 @@
 
         <!-- current loadshedding status -->
 
-        <div class="grid-now-layout app-box">
-            <div class="label-box, label-box-color">
+        <div class="grid-now-layout windows-theme">
+            <div class="label-box headers-theme">
                 <h2>Current status</h2>
             </div>
                 <img src="./ressources/img/squirtleDown.gif" class="illustration" alt="">
@@ -52,16 +53,16 @@
 
         <!-- next loadshedding time -->
 
-        <div class="grid-next-layout app-box">
-            <div class="label-box label-box-color">
+        <div class="grid-next-layout windows-theme">
+            <div class="label-box headers-theme">
                 <h2>Next down time</h2>
             </div>
         </div>
 
         <!-- forecast table for 7 days -->
 
-        <div class="grid-forecast-layout app-box" >
-            <div class="label-box label-box-color">
+        <div class="grid-forecast-layout windows-theme" >
+            <div class="label-box headers-theme">
                 <h2>7 days forecast</h2>
             </div>
             
