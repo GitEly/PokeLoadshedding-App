@@ -16,7 +16,7 @@
     <header class="headers-theme">
         <div id="pika-theme-button" class="theme-box"onclick="changeTheme('Pikachu')"><img src="./ressources/img/pika.png" class="theme-icon" alt="pikachu theme"></div>
         <div id="charma-theme-button" class="theme-box" onclick="changeTheme('Charmander')"><img src="./ressources/img/charmander.png" class="theme-icon" alt="charmender theme"></div>
-        <div id="squir-theme-button" class="theme-box"onclick="changeTheme('Squirtle')"><img src="./ressources/img/squirtle.png" class="theme-icon" alt="squirtle theme"></div>
+        <div id="squir-theme-button" class="theme-box"onclick="setTheme('Squirtle')"><img src="./ressources/img/squirtle.png" class="theme-icon" alt="squirtle theme"></div>
     </header>
 
     <!-- app countainer -->
@@ -27,10 +27,10 @@
 
         <div id="title-box" class="grid-title-layout">
             <h1 class="title-text"><span id="pkword">POKéSKOM</span> - Gotta stage them all</h1>
-            <div class="flip">
+            <div class="flip" onclick="window.location.reload()">
                 <div class="flip-inner">
                     <div class="front">
-                        <img class="thumbnail" src="./ressources/img/refresh.png" alt="refresh" onclick="window.location.reload()">
+                        <img class="thumbnail" src="./ressources/img/refresh.png" alt="refresh">
                     </div>
                     <div class="back">
                         <img class="thumbnail" src="./ressources/img/logo.png" alt="logo">
@@ -46,7 +46,7 @@
                 <h2 class="headers-titles">Current status</h2>
             </div>
             <div id="gif-box">
-                <img src="./ressources/img/squirtleDown.gif" id="illustration" alt="">
+                <img src="./ressources/img/squirtleDown.gif" class="illustration" alt="">
             </div>
             <div class="current-data-box">
                 <p><span>🚫</span> Power is <span>OFF</span> : <span class="data-time">16:00 to 18:30</span></p>
@@ -71,8 +71,7 @@
         </div>
     </div>
     </section>
-    <script src="./scripts/gif.worker.js"></script>
-    <script src="./scripts/gif.js"></script>
+    
     <script src="./scripts/script.js"></script>
     <script src="./scripts/theme.js"></script>
 </body>

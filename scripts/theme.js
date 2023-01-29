@@ -2,6 +2,11 @@
 let themeSheet = document.getElementById("theme-sheet");
 let cachedTheme = localStorage.getItem('cachedTheme');
 
+// function changeTheme 
+// is called when user press a theme button, change theme css url
+// store selection to local storage
+
+
 function changeTheme(selection) {
     newLink = "./styles/theme"+selection+".css";
     themeSheet.setAttribute("href", newLink);

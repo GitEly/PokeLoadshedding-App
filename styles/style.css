@@ -120,10 +120,9 @@ h2 {
     text-align: center;
 }
 
-#illustration {
+.illustration {
     border:solid 1px black;
     height: 150px;
-    cursor: pointer;
 }
 
 /* flip logo to refresh on hover */

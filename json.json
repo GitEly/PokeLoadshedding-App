@@ -1,0 +1,34 @@
+{
+    "areas": [
+        {
+            "id": "eskde-1-hopetownathembelihlenortherncape",
+            "name": "Hopetown A (1)",
+            "region": "Eskom Direct, Thembelihle, Northern Cape"
+        },
+        {
+            "id": "eskdo-8-hopetownmogalakwenalimpopo",
+            "name": "Hopetown (8)",
+            "region": "Eskom Direct, Mogalakwena, Limpopo"
+        },
+        {
+            "id": "eskde-1-hopetownthembelihlenortherncape",
+            "name": "Hopetown (1)",
+            "region": "Eskom Direct, Thembelihle, Northern Cape"
+        },
+        {
+            "id": "eskme-1-hopetownthembelihlelocalmunicipalitynortherncape",
+            "name": "Hopetown (1)",
+            "region": "Eskom Municipal, Thembelihle LocalMunicipality, Northern Cape"
+        },
+        {
+            "id": "eskdo-8-hopetownlephalalelimpopo",
+            "name": "Hopetown (8)",
+            "region": "Eskom Direct, Lephalale, Limpopo"
+        },
+        {
+            "id": "eskde-1-hopetownbthembelihlenortherncape",
+            "name": "Hopetown B (1)",
+            "region": "Eskom Direct, Thembelihle, Northern Cape"
+        }
+    ]
+}
