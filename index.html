@@ -16,7 +16,7 @@
     <header class="headers-theme">
         <div id="pika-theme-button" class="theme-box"onclick="changeTheme('Pikachu')"><img src="./ressources/img/pika.png" class="theme-icon" alt="pikachu theme"></div>
         <div id="charma-theme-button" class="theme-box" onclick="changeTheme('Charmander')"><img src="./ressources/img/charmander.png" class="theme-icon" alt="charmender theme"></div>
-        <div id="squir-theme-button" class="theme-box"onclick="setTheme('Squirtle')"><img src="./ressources/img/squirtle.png" class="theme-icon" alt="squirtle theme"></div>
+        <div id="squir-theme-button" class="theme-box"onclick="changeTheme('Squirtle')"><img src="./ressources/img/squirtle.png" class="theme-icon" alt="squirtle theme"></div>
     </header>
 
     <!-- app countainer -->
@@ -43,13 +43,21 @@
 
         <div class="grid-now-layout windows-theme">
             <div class="headers-box headers-theme">
-                <h2 class="headers-titles">Current status</h2>
+                <h2 class="theme-text-color">Current status</h2>
             </div>
             <div id="gif-box">
-                <img src="./ressources/img/squirtleDown.gif" class="illustration" alt="">
+                <img src="./ressources/img/squirtleDown.gif" id="illustration" alt="">
             </div>
-            <div class="current-data-box">
-                <p><span>🚫</span> Power is <span>OFF</span> : <span class="data-time">16:00 to 18:30</span></p>
+            <div id="current-status-info" class="theme-text-color">
+                <div id="emoji-box">
+                    <p id="status-emoji">🚫</p>
+                </div>
+                <div>
+                    <p>Power is : <span id="status-power">OFF</span></p>
+                </div>
+                <div id="ls-schedule-box">
+                    <p id="current-data-time">16:00 to 18:30</p>
+                </div>
             </div>
         </div>
 
@@ -57,15 +65,15 @@
 
         <div class="grid-next-layout windows-theme">
             <div class="headers-box headers-theme">
-                <h2 class="headers-titles">Next down time</h2>
+                <h2 class="theme-text-color">Next down time</h2>
             </div>
         </div>
 
         <!-- forecast table for 7 days -->
 
-        <div class="grid-forecast-layout windows-theme" >
+        <div class="grid-forecast-layout windows-theme">
             <div class="headers-box headers-theme">
-                <h2 class="headers-titles">7 days forecast</h2>
+                <h2 class="theme-text-color">7 days forecast</h2>
             </div>
             
         </div>

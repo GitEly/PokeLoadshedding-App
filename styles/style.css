@@ -120,9 +120,21 @@ h2 {
     text-align: center;
 }
 
-.illustration {
+#illustration {
     border:solid 1px black;
     height: 150px;
+}
+
+/* current status styles */
+
+#current-status-info {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+#status-emoji {
+    font-size: 28px;
 }
 
 /* flip logo to refresh on hover */
