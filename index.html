@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/themePikachu.css" id="theme-sheet">
+    <link rel="stylesheet" href="" id="theme-sheet">
     <title>POKéSKOM</title>
 </head>
 
@@ -14,9 +14,9 @@
     <!-- theme selector -->
 
     <header class="headers-theme">
-        <div id="pika-theme-button" class="theme-box"onclick="changeTheme('Pikachu')"><img src="./ressources/img/pika.png" class="theme-icon" alt="pikachu theme"></div>
-        <div id="charma-theme-button" class="theme-box" onclick="changeTheme('Charmander')"><img src="./ressources/img/charmander.png" class="theme-icon" alt="charmender theme"></div>
-        <div id="squir-theme-button" class="theme-box"onclick="changeTheme('Squirtle')"><img src="./ressources/img/squirtle.png" class="theme-icon" alt="squirtle theme"></div>
+        <div id="pika-theme-button" class="theme-box"onclick="setTheme('Pikachu')"><img src="./ressources/img/pika.png" class="theme-icon" alt="pikachu theme"></div>
+        <div id="charma-theme-button" class="theme-box" onclick="setTheme('Charmander')"><img src="./ressources/img/charmander.png" class="theme-icon" alt="charmender theme"></div>
+        <div id="squir-theme-button" class="theme-box"onclick="setTheme('Squirtle')"><img src="./ressources/img/squirtle.png" class="theme-icon" alt="squirtle theme"></div>
     </header>
 
     <!-- app countainer -->
@@ -45,19 +45,19 @@
             <div class="headers-box headers-theme">
                 <h2 class="theme-text-color">Current status</h2>
             </div>
-            <div id="gif-box">
-                <img src="./ressources/img/squirtleDown.gif" id="illustration" alt="">
-            </div>
             <div id="current-status-info" class="theme-text-color">
                 <div id="emoji-box">
-                    <p id="status-emoji">🚫</p>
+                    <p id="status-emoji"></p>
                 </div>
                 <div>
-                    <p>Power is : <span id="status-power">OFF</span></p>
+                    <p>Power is : <span id="status-power"></span></p>
                 </div>
                 <div id="ls-schedule-box">
-                    <p id="current-data-time">16:00 to 18:30</p>
+                    <p id="current-data-time"><span id="current-LS-start">16:00</span> to <span id="current-LS-end">18:30</span></p>
                 </div>
+            </div>
+            <div id="gif-box">
+                <img src="./ressources/img/squirtleDown.gif" id="illustration" alt="">
             </div>
         </div>
 
@@ -79,8 +79,7 @@
         </div>
     </div>
     </section>
-    
-    <script src="./scripts/script.js"></script>
     <script src="./scripts/theme.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
