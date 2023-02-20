@@ -1,38 +1,26 @@
+// this script manage theme changes, storing into cache and
+// retrieve if there is a cached theme
 
-let themeSheet = document.getElementById("theme-sheet");
 let cachedTheme = localStorage.getItem('cachedTheme');
-var currentTheme;
+let themeCss = document.getElementById('theme-sheet');
+let currentTheme = "Pikachu";
 
-// function changeTheme 
-// is called when user press a theme button, change theme css url accordingly
-// store selection to local storage
+const storeTheme = (theme) => localStorage.setItem('cachedTheme', theme);
 
-
-function changeTheme(selection) {
-    newLink = "./styles/theme"+selection+".css";
-    themeSheet.setAttribute("href", newLink);
-    localStorage.setItem('cachedTheme', selection);
+const setTheme = (theme) => {
+    cssPath = "./styles/theme"+theme+".css";
+    themeCss.setAttribute("href", cssPath);
+    storeTheme(theme);
+    currentTheme = theme;
 }
 
-// function setTheme 
-// is called onload
-// set theme to local storage value or pika by default
-
-function setTheme(theme) {
-    switch (theme) {
-        case 'Charmander':
-            changeTheme(theme);
-            currentTheme = 'Charmander';
-            break;
-        case 'Squirtle':
-            changeTheme(theme);
-            currentTheme = 'Squirtle';
-            break;
-        default:
-            changeTheme('Pikachu');
-            currentTheme = "Pikachu"
-            break;
-    }
+const checkTheme = () => {
+    if (cachedTheme) {
+    setTheme(cachedTheme);
+    currentTheme = cachedTheme;
+}else{
+    setTheme("Pikachu");
+}
 }
 
-window.onload = setTheme(cachedTheme);
+checkTheme();
