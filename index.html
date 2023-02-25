@@ -45,7 +45,7 @@
             <div class="headers-box headers-theme">
                 <h2 class="theme-text-color">Current status</h2>
             </div>
-            <div id="current-status-info" class="theme-text-color">
+            <div class="status-info theme-text-color upper-box-data">
                 <div id="emoji-box">
                     <p id="status-emoji"></p>
                 </div>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div id="gif-box">
-                <img src="./ressources/img/squirtleDown.gif" id="illustrationGif" alt="">
+                <img src="" id="illustrationGif" alt="">
             </div>
         </div>
 
@@ -67,6 +67,16 @@
             <div class="headers-box headers-theme">
                 <h2 class="theme-text-color">Next down time</h2>
             </div>
+            <div id="next-ls-data-container">
+                <table class="status-info theme-text-color next-downtime-data next-ls-table upper-box-data">
+                    <tr>
+                        <td id="next-ls-date-data">Tomorrow</td>
+                    </tr>
+                    <tr>
+                        <td id="next-ls-date-data">16:00 - 18:30</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <!-- forecast table for 7 days -->
@@ -75,11 +85,46 @@
             <div class="headers-box headers-theme">
                 <h2 class="theme-text-color">7 days forecast</h2>
             </div>
+            <div id="forecast-container">
+<!-- <table class="status-info theme-text-color forecast-table">
+                    <tr>
+                        <td class="forecast-day-data">21/02/2023</td>
+                        <td class="forecast-ls-data">04:00 - 06:30</td>
+                    </tr>
+                    <tr>
+                        <td class="forecast-day-data">23/02/2023</td>
+                        <td class="forecast-ls-data">No loadshedding</td>
+                    </tr>
+                    <tr>
+                        <td class="forecast-day-data">24/02/2023</td>
+                        <td class="forecast-ls-data">04:00 - 06:30, 14h - 18h30</td>
+                    </tr>
+                    <tr>
+                        <td class="forecast-day-data">25/02/2023</td>
+                        <td class="forecast-ls-data">No data</td>
+                    </tr>
+                    <tr>
+                        <td class="forecast-day-data">26/02/2023</td>
+                        <td class="forecast-ls-data">08:00 - 10h30, 14h - 16h30, 20h - 00:30</td>
+                    </tr>
+                    <tr>
+                        <td class="forecast-day-data">27/02/2023</td>
+                        <td class="forecast-ls-data">14h - 16h30, 20h - 00:30</td>
+                    </tr>
+                    <tr>
+                        <td class="forecast-day-data">28/02/2023</td>
+                        <td class="forecast-ls-data">14h - 16h30, 20h - 00:30</td>
+                    </tr>
+                </table>-->
+                <table id="weather-table">
+                    <tbody>
+                    </tbody>
+                  </table>                  
+            </div>
             
         </div>
     </div>
     </section>
-    <script src="./scripts/theme.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
 </html>

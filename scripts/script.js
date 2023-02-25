@@ -6,7 +6,7 @@ isLS = true;
 
 let cachedTheme = localStorage.getItem('cachedTheme');
 let themeCss = document.getElementById('theme-sheet');
-let currentTheme = "Pikachu";
+let currentTheme;
 
 const storeTheme = (theme) => localStorage.setItem('cachedTheme', theme);
 
@@ -55,3 +55,39 @@ const clickChangeTheme = (theme) => {
 
 console.log(isLS);
 console.log(currentTheme);
+
+
+// Get the table body
+const tableBody = document.querySelector('#weather-table tbody');
+
+// Get the current date
+const today = new Date();
+
+// Loop through the next 7 days
+for (let i = 1; i <= 7; i++) {
+  // Create a new date object for the current day in the loop
+  const date = new Date(today.getTime() + (i * 24 * 60 * 60 * 1000));
+
+  // Create a new table row
+  const row = document.createElement('tr');
+
+  // Determine the background color based on whether the row is even or odd
+  if (i % 2 === 0) {
+    row.style.backgroundColor = '#e4e0e0';
+  }
+
+  // Create the cells for the row
+  const dateCell = document.createElement('td');
+  const weatherCell = document.createElement('td');
+
+  // Set the content of the cells
+  dateCell.textContent = date.toISOString().slice(0,10)+" "+"("+date.toLocaleString('en-US', { weekday: 'long' }) + ')';
+  weatherCell.textContent = '[Weather forecast for ' + date.toLocaleString('en-US', { weekday: 'long' }) + ']';
+
+  // Add the cells to the row
+  row.appendChild(dateCell);
+  row.appendChild(weatherCell);
+
+  // Add the row to the table body
+  tableBody.appendChild(row);
+}

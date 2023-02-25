@@ -58,6 +58,7 @@
 
 .grid-forecast-layout {
     grid-area: 3 / 1 / 4 / 3;
+    height: fit-content;
 }
 
 /* app styles */
@@ -126,17 +127,45 @@ h2 {
 
 /* current status styles */
 
-#current-status-info {
-    text-align: center;
+.status-info {
     font-family: Poppins;
     font-size: 20px;
     padding: 5px;
+}
+
+.upper-box-data {
+    text-align: center;
 }
 
 #status-emoji {
     font-size: 28px;
 }
 
+/*next down time section*/
+
+#next-ls-data-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+}
+
+/* forecast 7 days */
+
+#weather-table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+    font-family: Poppins;
+    font size: 20px;
+  }
+  
+#weather-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
 /* flip logo to refresh on hover */
 
 .flip {
